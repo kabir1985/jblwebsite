@@ -1,0 +1,5 @@
+__ci_last_regenerate|i:1685865497;lastquery|s:123:"SELECT `id`, `username`, `password`, `department`
+FROM `ms_admins`
+WHERE `username` = 'batayan'
+AND `status` = '1'
+ LIMIT 1";userid|s:1:"1";sessionid|s:32:"rkieetuakhunl1q377sa6s59sonn0ljj";username|s:7:"batayan";department|s:37:"HO Dept-MANAGEMENT INFORMATION SYSTEM";target_ready|b:0;

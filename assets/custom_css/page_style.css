@@ -1,0 +1,209 @@
+#banner{
+    width: 100%;
+    /*max-height: 250px;*/
+    max-height: 295px;
+}
+
+.content{
+    text-align: justify;
+}
+
+.galleryImg{
+    /*border: 20px solid  #b2babb;*/
+    /*border-top: none;*/
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.page_title{
+    color: #0099cc;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Helvetica, SolaimanLipi, Nikosh, NikoshBAN, NikoshGrameen, NikoshLight, NikoshLightBan, Sonar Bangla, Bangla, AdorshoLipi; 
+}
+
+.page_header{
+    background: #D9ECF3;
+    /*padding: 12px 0;*/
+    box-shadow: 0 1px 0 rgba(217, 236, 243, 1);
+    width: 100%;
+}
+
+.breadcrumb .breadcrumb-item a:first-child {
+    color: black;
+}
+
+/*.breadcrumb .breadcrumb-item a:first-child:hover {
+    color: #0099cc;
+}*/
+
+/*.breadcrumb .breadcrumb-item li a:last-child {
+    color: #0099cc;
+}*/
+
+
+#heading{
+    font-family: kalpurush !important;
+    font-size: 14px; 
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color:#880000; 
+    padding-top: 50px;
+}
+
+#heading td{
+    text-transform: none;
+    font-family: kalpurush !important;
+}
+
+#heading th{
+    background-color:#51B9DD;
+    color:white;
+    text-align:left;
+    font-size:14px;
+    font-family: kalpurush !important;
+}
+
+.table td, .table th{
+    font-family: kalpurush !important;
+}
+
+#horizontal_ruler hr{
+    background-color:#0099cc;
+    margin: 4px auto;
+}
+
+ul.tabs {
+    margin: 0;
+    padding-top: 10px;
+    float: left;
+    list-style: none;
+    height: 25px;
+    width: 97%;
+}
+#tabwrapper ul.tabs li{
+    width:134px;
+}
+
+ul.tabs li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;	
+    overflow: hidden;
+    position: relative;
+    background: #a4b5bd; 
+}
+
+ul.tabs li a {
+    text-decoration: none;
+    color: #f3f7f9;
+    display: block;
+    font-size: 12px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align: center;
+}
+ul.tabs li a:active,ul.tabs li a:hover {
+    background: #51B9DD;
+    color:#880000;
+    text-decoration:none;
+}
+html ul.tabs li.current, html ul.tabs li.current a:hover  {
+    background: #51B9DD; 
+    text-decoration:none;
+}
+ul.tabs li.current a
+{
+    color: #fff;
+}
+
+.tab-content {
+    font-size: 1.2em;
+}
+
+.tab-content p, .tab-content ul.my_ul, .tab-content ol.my_ol{
+    color: #000000;
+    font-family: Helvetica, SolaimanLipi, Nikosh, NikoshBAN, NikoshGrameen, NikoshLight, NikoshLightBan, Sonar Bangla, Bangla, AdorshoLipi;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+}
+.tab-content h2 {
+    font-weight: normal;
+    padding-bottom: 10px;
+    border-bottom: 1px ridge #ddd;
+    font-size: 1.8em;
+}
+.tab-content h3 a{
+    color: #254588;
+}
+
+.award_box {
+    text-align: center;
+    border: 1px solid #0099cc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: auto;
+}
+
+.award_description{
+    text-align: justify;
+    padding: 10px;
+}
+
+.ceomd_image{
+    margin: 5px;
+    padding: 5px;
+    border: 0px solid #000000;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+    border: 1px solid #0099cc;
+}
+
+.jbpublication{
+    margin: 5px;
+    padding: 5px;
+    border: 0px solid #000000;
+    /*height: auto;*/
+    width: auto;
+    float: left;
+    text-align: center;
+    /*border: 1px solid #0099cc;*/
+    height: 215px;
+}
+
+.pagination a{
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 3px;
+    margin-left: -1px;
+}
+
+.title{
+    font-size:12px;
+}
+/*Responsive Style*/
+
+@media (max-width: 768px){
+    #heading{
+        font-family: kalpurush !important;
+        font-size: 14px; 
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color:#880000; 
+        padding-top: 115px;
+    }
+
+    .w-50{
+        width: 100%!important;
+    }
+
+}

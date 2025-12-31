@@ -1,0 +1,104 @@
+
+#v-nav
+{
+    height: 100%;
+    margin: auto;
+    color: #333;
+    font-size: 12px;
+    font-family: Helvetica, SolaimanLipi, Nikosh, NikoshBAN, NikoshGrameen, NikoshLight, NikoshLightBan, Sonar Bangla, Bangla, AdorshoLipi;
+/*	width:690px;
+	min-width:690px*/
+}
+
+#v-nav >ul
+{
+    float: left;
+    /*below width- comments because menu on top*/
+    /*width: 210px;*/
+    display: block;
+    /*below position comments because menu on top*/
+    position: relative;
+    top: 0;
+    /*border: 1px solid #D9ECF3;*/
+    /*border: 1px solid #DDD; border-right-width: 0;*/
+	/*margin: auto 0 !important;*/
+    padding:0;
+}
+
+#v-nav >ul >li
+{
+    /*width: 180px;*/
+    list-style-type: none;
+    display: block;
+    /*text-shadow: 0px 1px 1px #F2F1F0;*/
+    font-size: 16px;
+    font-family: Helvetica, SolaimanLipi, Nikosh, NikoshBAN, NikoshGrameen, NikoshLight, NikoshLightBan, Sonar Bangla, Bangla, AdorshoLipi;
+    position: relative;
+    border-right-width: 0;
+    /*border-bottom: 1px solid #DDD;*/
+    margin: auto;
+    padding: 2px 15px !important;
+    cursor: pointer;
+/*    background: #8cc2da;   whiteSmoke; Old browsers 
+    background: -moz-linear-gradient(top, #8cc2da 0%, #f2f2f2 100%);  FF3.6+ 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8cc2da), color-stop(100%, #f2f2f2));  Chrome,Safari4+ 
+    background: -webkit-linear-gradient(top, #8cc2da 0%, #f2f2f2 100%);  Chrome10+,Safari5.1+ 
+    background: -o-linear-gradient(top, #8cc2da 0%, #f2f2f2 100%);  Opera 11.10+ 
+    background: -ms-linear-gradient(top, #8cc2da 0%, #f2f2f2 100%);  IE10+ 
+    background: linear-gradient(top, #8cc2da 0%, #f2f2f2 100%);        */
+}
+
+#v-nav >ul >li.current
+{
+    color: #fff;
+    border-right: none;
+    z-index: 10;
+    background: #0099cc !important;
+    position: relative;
+   /* moz-box-shadow: inset 0 0 35px 5px #dbedf4; 
+    -webkit-box-shadow: inset 0 0 35px 5px #dbedf4;
+    box-shadow: inset 0 0 35px 5px #dbedf4;*/
+}
+
+#v-nav >ul >li.first.current
+{
+    border-bottom: 1px solid #DDD;
+}
+
+#v-nav >ul >li.last
+{
+    border-bottom: none;
+}
+
+#v-nav >div.tab-content
+{
+    /*margin-left: 215px;*/
+    /*border: 1px solid #D9ECF3;*/
+    /*background-color: #FFF;*/
+    /*min-height: 400px;*/
+    /*position: relative;*/
+    /*z-index: 9;*/
+    /*padding: 12px;*/
+/*    moz-box-shadow: inset 0 0 35px 5px #dbedf4;
+    -webkit-box-shadow: inset 0 0 35px 5px #dbedf4;
+    box-shadow: inset 0 0 35px 5px #dbedf4;*/
+    /*display: none;*/
+    /*padding: 25px;*/
+}
+
+#v-nav .tab-content{
+/*moz-box-shadow: inset 0 0 35px 5px red;
+box-shadow: inset 0 0 35px 5px red;*/
+font-size: 15px;
+}
+
+/*#v-nav >div.tab-content >h4
+{
+    font-size: 1.2em;
+	font-family: Nikosh,SolaimanLipi,Helvetica;
+    color: Black;
+    text-shadow: 0px 1px 1px #F2F1F0;
+    border-bottom: 1px dotted #EEEDED;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}*/
