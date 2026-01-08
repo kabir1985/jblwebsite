@@ -30,10 +30,10 @@
 
     .photo-frame img {
       width: 100%;
-      height: 320px;
+      height: 220px;
       object-fit: cover;
       display: block;
-      border-radius: 8px;
+      border-radius: 6px;
     }
 
     .photo-frame:hover {
@@ -74,7 +74,7 @@
 
 <div class="container py-1">
   <a href="#" target="_blank" class="text-decoration-none text-dark">
-    <div class="card fullwidth-card mx-auto p-3" style="max-width: 600px; max-height:550px;">
+    <div class="card fullwidth-card mx-auto p-3" style="max-width: 600px; max-height:450px;">
       
       <div class="photo-frame mx-auto mb-3">
         <img src="assets/images/others/chairman.png" class="rounded mx-auto d-block" alt="Feature Image" >
