@@ -7,13 +7,13 @@
     </div>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>" >Home</a> </li>
             <?php foreach ($mainmenu as $mm) : ?>
                 <?php if ($mm->mid != $mm->spid) : ?>
-                    <li class="nav-item">
+                    <li class="nav-item" style="z-index: 999;">
                         <a class="nav-link" href="<?php echo base_url() . $mm->url; ?>"><?php echo $mm->mname; ?></a>
                     </li>
                 <?php else : ?>
-
                     <!------------------------------------update by kabir --------------------------------------------------------------------------------------->
                      <li class="nav-item dropdown menu-area">
                         <a class="nav-link" href="<?php echo $mm->url; ?>" id="mega-one" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -25,20 +25,20 @@
                                         <div class="col-md-3 drop">
                                             <?php if ($sm->submenu_url != NULL) : ?>
                                                 <?php if (substr($sm->submenu_url, 0, 4) === "http") : ?>
-                                                    <a style="color: #f33b51;" href="<?php //echo $sm->submenu_url; ?>"><?php //echo $sm->submenu_name; ?></a>
+                                                    <a style="color: #f33b51;" href="<?php echo $sm->submenu_url; ?>"><?php echo $sm->submenu_name; ?></a>
                                                 <?php else : ?>
-                                                    <a style="color: #f33b51;" href="<?php //echo base_url() . $sm->submenu_url; ?>"><?php //echo $sm->submenu_name; ?></a>
+                                                    <a style="color: #f33b51;" href="<?php echo base_url() . $sm->submenu_url; ?>"><?php echo $sm->submenu_name; ?></a>
                                                 <?php endif; ?>
                                             <?php else : ?>
-                                                <a style="color: #f33b51;"> <?php //echo $sm->submenu_name; ?></a>
+                                                <a style="color: #f33b51;"> <?php echo $sm->submenu_name; ?></a>
                                             <?php endif; ?>
                                             <div class="dropdown-divider"></div>
                                             <?php foreach ($childmenu as $child) : ?>
                                                 <?php if ($sm->submenu_id == $child->childmenu_parent) : ?>
                                                     <?php if (substr($child->childmenu_url, 0, 4) === "http") : ?>
-                                                        <a class="dropdown-item" href="<?php //echo $child->childmenu_url; ?>"><?php //echo $child->childmenu_name; ?></a>
+                                                        <a class="dropdown-item" href="<?php echo $child->childmenu_url; ?>"><?php echo $child->childmenu_name; ?></a>
                                                     <?php else : ?>
-                                                        <a class="dropdown-item" href="<?php //echo base_url() . $child->childmenu_url; ?>"><?php //echo $child->childmenu_name; ?></a>
+                                                        <a class="dropdown-item" href="<?php echo base_url() . $child->childmenu_url; ?>"><?php echo $child->childmenu_name; ?></a>
                                                     <?php endif; ?>
                                                 <?php endif; ?>
                                             <?php endforeach; ?>
@@ -48,13 +48,14 @@
                             </div>
                         </div>
                     </li> 
-
 <!--------------------------------------------------- update by kabir end------------------------------------------------------------------------------------------------- -->
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>
     </div>
 </nav>
+
+
 
 <script type="text/javascript">
 //    document.addEventListener("DOMContentLoaded", function () {

@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v4.6.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */:root {
+:root {
 	--blue: #007bff;
 	--indigo: #6610f2;
 	--purple: #6f42c1;
@@ -512,7 +507,7 @@ pre code {
 	width: 100%;
 	/* padding-right: 15px; */
 	padding-right: 10px;
-	padding-left: 15px;
+	padding-left: 10px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -564,7 +559,7 @@ pre code {
 	position: relative;
 	width: 100%;
 	padding-right: 1px;
-	padding-left: 1px;
+	padding-left: 6px;
 }
 
 .col {
@@ -8226,8 +8221,9 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	left: 0;
 	z-index: 1030;
         /*customized code*/
-      /*  background: rgba(0, 153, 204, 0.8)!important;*/
-	  background: linear-gradient(135deg, #0099cc, #4dd5ff) !important;
+      /*  background: rgba(0, 153, 204, 0.8)!important;
+	  background: linear-gradient(135deg, #0099cc, #4dd5ff) !important;*/
+	 background: linear-gradient(135deg, #0099cc, #00D4B1) !important;
 }
 
 .fixed-bottom {

@@ -6,6 +6,9 @@
             table.dataTable th, table.dataTable td{
                 font-family: kalpurush !important;
             }
+            p{
+                color:#2c2c2c !important; 
+            }
         </style>
     </head>
     <body>
@@ -18,7 +21,7 @@
             <thead>
                 <tr>
                     <th class="centered">SL</th>
-                    <th class="">TITLE</th>
+                    <th class="">TITLEe</th>
                     <th class="centered">VIEW</th>
                     <th class="centered">DOWNLOAD</th>
                 </tr>

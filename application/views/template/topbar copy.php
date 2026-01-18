@@ -232,17 +232,12 @@
                     text-align: left;
                 }
             }
-
-
-
-
-
         </style>
     </head>
     <body>
 
-         <div class="topnav" id="myTopnav">
-          <!--  <a href="<?php echo base_url(); ?>"><i class="fa fa-home"></i> Home</a>
+        <div class="topnav" id="myTopnav">
+            <a href="<?php echo base_url(); ?>"><i class="fa fa-home"></i> Home</a>
             <a href="<?php echo base_url(); ?>home/aml"> AML & CFT</a>
             <a href="<?php echo base_url(); ?>services/atm"> ATMs</a>
             <a href="<?php echo base_url(); ?>home/forms"> Forms</a>
@@ -253,20 +248,20 @@
             <a target="_blank" href="https://jbnikash.jb.com.bd"> JBNikash</a>
             <a target="_blank" href="https://omis.jb.com.bd/rpd/"> OMIS</a>
             <a target="_blank" href="https://pmis.janatabank-bd.com/"> PMIS</a>
-            <a target="_blank" href="https://mail.janatabank-bd.com/"> Webmail</a>-->
+            <a target="_blank" href="https://mail.janatabank-bd.com/"> Webmail</a>
             <!--a href="<?php echo base_url(); ?>home/tender"> Tender</a-->
-           <!-- <a href="<?php echo base_url(); ?>Circular"> Circulars</a>
-			<a href="<?php echo base_url(); ?>contact_us/complaint-cell"> Customer's Complaint</a> -->
+            <a href="<?php echo base_url(); ?>Circular"> Circulars</a>
+			<a href="<?php echo base_url(); ?>contact_us/complaint-cell"> Customer's Complaint</a>
 
             <!--            <button href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </button>-->
 
-            <!-- <span href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-            </span> -->
+            </span>
 
             <!--            <div class="search-container">
                             <form action="/action_page.php">
@@ -275,11 +270,11 @@
                             </form>
                         </div>-->
 
-            <form class="searchbar" action="<?php echo base_url(); ?>home/search" method="POST">
-                <input type="search" placeholder="Type Here......" name="search" class="searchbar-input" onkeyup="buttonUp();" required>
-                <input type="submit" class="searchbar-submit" value="GO">
+            <form class="searchbar" action="<?php echo base_url(); ?>home/search" method="POST"> 
+                <input type="search" placeholder="Type Here......" name="search" class="searchbar-input" onkeyup="buttonUp();" required> 
+                <input type="submit" class="searchbar-submit" value="GO"> 
                 <span class="searchbar-icon"><i class="fa fa-search" aria-hidden="true"></i>
-                </span>
+                </span> 
             </form>
 
 

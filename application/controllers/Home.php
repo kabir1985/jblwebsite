@@ -574,18 +574,4 @@ class Home extends CI_Controller
         $data['main_content'] = 'textFile_view_bond';
         $this->load->view('template/common_template', $data);
     }
-
-
-    // public function visitor_counter()
-// {
-
-    // $this->load->model('Visitor_model');
-// $data['total_visitors'] = $this->Visitor_model->total_visitors();
-// $data['today_visitors'] = $this->Visitor_model->today_visitors();
-// $this->load->view('home', $data);
-// }
-
-
-
-
 }

@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
 #box-service {
   background: linear-gradient(135deg, #ffffff, #e6f5ff);
   border: none;
@@ -105,8 +105,139 @@
     width: 100%;
   }
 }
+</style> -->
+
+
+<style>
+#box-service {
+  background: linear-gradient(135deg, #ffffff, #e6f5ff);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0, 153, 204, 0.25);
+  height: 180px;
+  margin-bottom: .5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#box-service::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #0099cc, #22c55e);
+  border-radius: 10px 0 0 10px;
+}
+
+#box-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 153, 204, 0.4);
+  background: linear-gradient(135deg, #e0f7ff, #ffffff);
+}
+
+#box-service span {
+  display: block;
+  font-family: "kalpurush", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+  color: #006699;
+  margin-bottom: 8px;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.media img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c2f0ff, #ffffff);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#box-service:hover .media img {
+  transform: scale(1.05);
+}
+
+.media-body ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.media-body li {
+  font-family: "kalpurush", sans-serif !important;
+  font-size: 13px;
+  color: #000;
+  margin: 2px 0;
+  padding-left: 15px;
+  position: relative;
+}
+
+.media-body li::before {
+  content: "›";
+  color: #0099cc;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.media-body li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.media-body li a:hover {
+  color: #0099cc;
+}
+
+/* ===== Read More feature ===== */
+
+.services-collapsed .col-lg-3:nth-child(n+9) {
+  display: none;
+}
+
+ #readMoreBtn {
+  display: block;
+  margin: 5px auto 10px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0099cc, #22c55e);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} 
+
+
+#readMoreBtn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  #box-service {
+    height: auto;
+    width: 100%;
+  }
+}
 </style>
 
+
+
+<div class="services-wrapper services-collapsed">
+  <div class="row container-fluid">
 
 <div class="row container-fluid">
 
@@ -353,5 +484,31 @@
 
 
 </div>
+
+
+</div>
+</div>
+
+<button id="readMoreBtn">Read More</button>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const wrapper = document.querySelector(".services-wrapper");
+  const btn = document.getElementById("readMoreBtn");
+
+  if (!wrapper || !btn) return;
+
+  btn.addEventListener("click", function () {
+    wrapper.classList.toggle("services-collapsed");
+
+    if (wrapper.classList.contains("services-collapsed")) {
+      btn.textContent = "Read More";
+    } else {
+      btn.textContent = "Read Less";
+    }
+  });
+});
+</script>
 
 

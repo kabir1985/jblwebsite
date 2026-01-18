@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>       
+    <head> 
+        <style>
+            p{
+                color:#2c2c2c !important;   /* Dark gray – better than pure black */
+            }
+        </style>      
     </head>
 
     <body>

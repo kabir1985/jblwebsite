@@ -14,23 +14,24 @@
 
     <body>
         <!--Start--Top Menu-->
-        <div class="container-fluid topbar">
-            <div class="container">
-                <div class="row">
-                    <?php $this->load->view('template/topbar'); ?>
-                </div>
-            </div>
+        <div class="container">
+            <!-- <div class="container">
+                <div class="row"> -->
+                    <?php //$this->load->view('template/topbar'); ?>
+                    <?php $this->load->view('template/logo_section'); ?>
+                <!-- </div>
+            </div> -->
         </div>
         <!--End--Top Menu-->
 
         <!--Start--Logo-->
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-12 logo">
-                    <a href="<?php echo base_url(); ?>"> <img src="<?php echo base_url(); ?>assets/images/others/jblogo.png" class="img-fluid" alt="logo"></a>
+                    <a href="<?php //echo base_url(); ?>"> <img src="<?php echo base_url(); ?>assets/images/others/jblogo.png" class="img-fluid" alt="logo"></a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--End--Logo-->
 
         <!--Start--Menu Bar-loaded-from-helper-->

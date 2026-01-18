@@ -230,7 +230,7 @@
     height: 100%;
 }
 .modal-strip {
-    /*padding: 10px 0 0;*/
+    padding: 10px 0 0;
     height: 60px;
     position: fixed;
     bottom: 0;

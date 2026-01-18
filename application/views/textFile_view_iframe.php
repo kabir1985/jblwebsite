@@ -5,6 +5,12 @@
             table.dataTable th, table.dataTable td{
                 font-family: kalpurush !important;
             }
+
+          
+            p{
+                color:#2c2c2c !important;   /* Dark gray – better than pure black */
+            }
+        
         </style>
         <link href="<?php echo base_url(); ?>assets/table/DataTables-1.11.2/css/jquery.dataTables.css" rel="stylesheet">
     </head>

@@ -235,7 +235,7 @@ p.slide_title {
     margin-bottom: 5px;
 }
 .footer p{
-    color: #fff;
+    color: #fff !important;
     font-size: 15px;
 }
 .footer a{
