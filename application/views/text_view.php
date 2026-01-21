@@ -3,7 +3,7 @@
     <head> 
         <style>
             p{
-                color:#2c2c2c !important;   /* Dark gray – better than pure black */
+                color:#3B3B3B !important;   /* Dark gray – better than pure black */
             }
         </style>      
     </head>

@@ -32,7 +32,7 @@
   p {
     line-height: 1.6;
     margin-bottom: 1rem;
-	color:#676767;
+	color:#3B3B3B !important;
   }
   /*iactive previous ul and li listing bullet points*/
   /*ul {

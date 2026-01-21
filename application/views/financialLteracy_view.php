@@ -6,6 +6,7 @@
     p {
       text-align: justify;
       font-size: 20px;
+      color:#3B3B3B !important;
     }
 
     summary {
@@ -33,6 +34,47 @@
             .carousel-caption p{
                 margin: -12px;
             }
+
+
+   #myBtn {
+    background: linear-gradient(135deg, #0099cc, #22c55e);
+    color: #ffffff;
+    border: none;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.35);
+}
+
+#myBtn:hover {
+    background: linear-gradient(135deg, #0a58ca, #084298);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.45);
+}
+
+#myBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(13, 110, 253, 0.3);
+}
+
+#myBtn:focus {
+    outline: none;
+}
+
+/* Mobile Friendly */
+@media (max-width: 576px) {
+    #myBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+
+
   </style>
 
 
