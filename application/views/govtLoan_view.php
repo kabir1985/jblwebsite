@@ -6,6 +6,9 @@
                 outline: none;
                 border: none;
             }
+            p{
+                color:#3B3B3B !important;
+            }
             .input100 {
                 font-family: Poppins-Regular;
                 font-size: 15px;

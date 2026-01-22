@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
+/* ================= GENERAL ================= */
 body{
     font-family:'Poppins',sans-serif;
     margin:0;
@@ -113,9 +114,9 @@ body{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    /* padding:10px 16px;
-    flex-wrap:wrap; */
-    flex-wrap:nowrap;   /* 🔥 force single line */
+    flex-wrap:nowrap;
+    gap:10px;
+    padding:8px 12px;
 }
 
 .logo img{
@@ -125,14 +126,78 @@ body{
 .menu{
     display:flex;
     gap:8px;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     align-items:center;
+    overflow-x:auto;
+    padding-bottom:2px;
 }
 
-/* ================= MOBILE ================= */
-@media(max-width:768px){
+.menu::-webkit-scrollbar{
+    height:4px;
+}
+
+.menu::-webkit-scrollbar-thumb{
+    background:#0099cc;
+    border-radius:10px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 992px){
+    .custom-btn{
+        font-size:12px;
+        padding:5px 10px;
+        white-space:nowrap;
+    }
+
     .searchbar{
-        display:none;
+        width:36px;
+        height:30px;
+    }
+
+    .searchbar.open{
+        width:180px;
+    }
+
+    .searchbar-input{
+        height:30px;
+        font-size:12px;
+    }
+
+    .searchbar-icon,
+    .searchbar-submit{
+        width:36px;
+        height:30px;
+        font-size:12px;
+    }
+
+    .logo img{
+        max-height:55px;
+    }
+}
+
+@media(max-width: 768px){
+    .logo img{
+        max-height:50px;
+    }
+    .custom-btn{
+        font-size:11px;
+        padding:4px 8px;
+    }
+    .searchbar.open{
+        width:150px;
+    }
+}
+
+@media(max-width: 576px){
+    .header{
+        flex-wrap:wrap;
+        gap:5px;
+    }
+    .menu{
+        gap:6px;
+    }
+    .searchbar.open{
+        width:120px;
     }
 }
 </style>
@@ -151,17 +216,15 @@ body{
 
     <!-- BUTTONS + SEARCH -->
     <div class="menu">
-        <a href="#" class="custom-btn"><span>eJanata Apps</span></a>
-        <!-- <a href="#" class="custom-btn"><span>JB Green Pin</span></a>
-        <a href="#" class="custom-btn"><span>Passport NOC</span></a> -->
-        <a href="#" class="custom-btn"><span>FAQ</span></a>
-        <a href="#" class="custom-btn"><span>Tender</span></a>
+        <a href="#" class="custom-btn"><span>Circulars</span></a>
+        <!-- <a href="#" class="custom-btn"><span>Branches</span></a> -->
         <a href="#" class="custom-btn"><span>Notice Board</span></a>
+        <a href="#" class="custom-btn"><span>FAQ</span></a>
 
         <!-- SEARCH -->
         <form class="searchbar" action="<?= base_url('home/search'); ?>" method="POST">
             <input type="search" name="search" class="searchbar-input" placeholder="Search..." required>
-             <button type="submit" class="searchbar-submit">Go</button>
+            <button type="submit" class="searchbar-submit">Go</button>
             <button type="button" class="searchbar-icon">🔍</button>
         </form>
     </div>
@@ -174,9 +237,10 @@ const searchBar = document.querySelector('.searchbar');
 const searchIcon = document.querySelector('.searchbar-icon');
 const searchInput = document.querySelector('.searchbar-input');
 
-searchIcon.addEventListener('click', () => {
+searchIcon.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent body click
     searchBar.classList.toggle('open');
-    searchInput.focus();
+    setTimeout(()=>searchInput.focus(),200);
 });
 
 document.addEventListener('click', (e) => {

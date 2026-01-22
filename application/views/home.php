@@ -33,7 +33,35 @@
     </div>
     <!--Start--Menu Bar-->
 
+<!-- /////////////Side fly menu///////////////////// -->
+<!-- Floating Side Menu -->
+<div class="floating-menu">
+    <ul>
+        <li>
+            <a href="<?php echo base_url('international_trade/exchange-rate');?>"><i class="fa fa-money"></i> <span class="menu-text">Exchange Rate</span></a>
+        </li>
+        <li>
+            <a href="https://pmis.janatabank-bd.com/branchinfo.aspx"><i class="fa fa-map-marker"></i> <span class="menu-text">Branch Locations</span></a>
+        </li>
+        
+        <li>
+            <a href="#"><i class="fa fa-product-hunt"></i> <span class="menu-text">Latest Products</span></a>
+        </li>
+        <li>
+            <a href="<?php echo base_url('home/forms');?>"><i class="fa fa-wpforms"></i> <span class="menu-text">Forms</span></a>
+        </li>
 
+        <li>
+            <a href="https://mail.janatabank-bd.com/"><i class="fa fa-envelope"></i> <span class="menu-text">Webmail</span></a>
+        </li>
+
+
+    </ul>
+</div>
+
+
+
+<!-- //////////////////////////////////// -->
 
     <!--Start--carousel--&-- Quick Link-->
     <div class="container-fluid">

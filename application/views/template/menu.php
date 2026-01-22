@@ -7,7 +7,7 @@
     </div>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>" >Home</a> </li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>" ><i class="fa fa-home"></i>&nbsp;Home</a> </li>
             <?php foreach ($mainmenu as $mm) : ?>
                 <?php if ($mm->mid != $mm->spid) : ?>
                     <li class="nav-item" style="z-index: 999;">

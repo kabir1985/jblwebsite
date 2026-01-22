@@ -91,6 +91,81 @@ h5{
     /*transform: translate(150%, 10%);*/
     /*transform: translate(-50%, -50%);*/
 }
+
+/* //////////////FLying menu css////////////////////////// */
+/* Floating Side Menu on Right */
+.floating-menu {
+    position: fixed;
+    top: 35%;
+    right: 0;
+    transform: translateY(-50%);
+    /*background: #0099cc;*/
+    background: linear-gradient(135deg, #0099cc, #00D4B1) !important;
+    border-radius: 8px 0 0 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+/* Menu list */
+.floating-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu items collapsed initially */
+.floating-menu ul li {
+    width: 50px; /* only icon visible */
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+/* Menu links */
+.floating-menu ul li a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Icon */
+.floating-menu ul li a i {
+    font-size: 20px;
+    min-width: 25px;
+}
+
+/* Menu text hidden initially */
+.floating-menu ul li a .menu-text {
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+}
+
+/* Expand menu on hover */
+.floating-menu:hover ul li {
+    width: 180px; /* expand width to show text */
+}
+
+/* Show text when menu is hovered */
+.floating-menu:hover ul li a .menu-text {
+    opacity: 1;
+}
+
+/* Hover effect on links */
+.floating-menu ul li a:hover {
+    background: #0077aa;
+    color: #fff;
+}
+
+/* ///////////////////////////////////////// */
+
+
+
 /*.carousel .carousel-indicators{visibility: hidden; }*/
 .carousel .carousel-control, .carousel-indicators {
     visibility: hidden;

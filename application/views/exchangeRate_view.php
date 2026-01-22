@@ -2,6 +2,13 @@
 <html lang="en">
     <head>   
         <link href="<?php echo base_url(); ?>assets/table/DataTables-1.11.2/css/jquery.dataTables.css" rel="stylesheet">
+   
+   <style>
+    p{
+        color: #3B3B3B !important;
+    }
+   </style>
+   
     </head>
     <body>
         <?php foreach ($page_details as $row) { ?>                         
